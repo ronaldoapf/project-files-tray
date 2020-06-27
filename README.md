@@ -1,7 +1,8 @@
-<div style="display: flex; justify-content: center;">
-    <img src="./assets/trayIcon.png" alt="Logo">
-</div>
 <h1 align="center">
+    <br>
+    <img src="./assets/trayIcon.png" alt="Logo">
+    <br>
+    <br>
     Project Files Tray
 </h1>
 
