@@ -6,7 +6,7 @@
     Project Files Tray
 </h1>
 
-<p align="center">I developed, based in [Rocketseat's ideia](https://github.com/Rocketseat/youtube-challenge-electron-tray) an app that provides an easy way to open favorite projects on VSCode.</p>
+<p align="center">I developed an app that provides an easy way to open favorite projects on VSCode.</p>
 
 <p align="center">
 
