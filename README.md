@@ -33,10 +33,6 @@
 3. Run `yarn` to install dependencies.<br />
 4. Run `yarn start`.
 
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
