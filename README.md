@@ -1,12 +1,4 @@
-# project-files-tray
-A tray to open projects in VSCode
-<style>
-    .logo{
-        display: flex;
-        justify-content: center;
-    }
-</style>
-<div class="logo">
+<div style="display: flex; justify-content: center;">
     <img src="./assets/trayIcon.png" alt="Logo">
 </div>
 <h1 align="center">
