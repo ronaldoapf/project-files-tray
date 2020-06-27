@@ -1,0 +1,19 @@
+{
+  "name": "project-files-tray",
+  "version": "1.0.0",
+  "description": "A tray to open projects in VSCode",
+  "main": "index.js",
+  "author": "Ronaldo Alves",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec electron ."
+  },
+  "devDependencies": {
+    "electron": "^9.0.5",
+    "electron-store": "^5.2.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "fix-path": "^3.0.0"
+  }
+}
