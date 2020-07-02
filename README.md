@@ -1,11 +1,12 @@
-<div style="display: flex; justify-content: center;">
-    <img src="./assets/trayIcon.png" alt="Logo">
-</div>
 <h1 align="center">
+    <br>
+    <img src="./assets/trayIcon.png" alt="Logo">
+    <br>
+    <br>
     Project Files Tray
 </h1>
 
-<p align="center">I developed, based in Rocketseat's ideia an app that provides an easy way to open favorite projects on VSCode.</p>
+<p align="center">I developed an app that provides an easy way to open favorite projects on VSCode.</p>
 
 <p align="center">
 
@@ -31,10 +32,6 @@
 2. `cd project-files-tray`;<br />
 3. Run `yarn` to install dependencies.<br />
 4. Run `yarn start`.
-
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
 
 ## License
 
