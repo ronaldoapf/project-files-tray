@@ -6,14 +6,22 @@
   "author": "Ronaldo Alves",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --exec electron ."
+    "start": "electron .",
+    "dev": "nodemon --exec electron .",
+    "dist": "build"
   },
+  "build": {
+    "target": "NSIS",
+    "icon": "icon.ico"
+  },
+
   "devDependencies": {
     "electron": "^9.0.5",
-    "electron-store": "^5.2.0",
+    "electron-builder": "^22.7.0",
     "nodemon": "^2.0.4"
   },
   "dependencies": {
+    "electron-store": "^5.2.0",
     "fix-path": "^3.0.0"
   }
 }

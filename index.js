@@ -1,9 +1,11 @@
 const { app, Menu, Tray, dialog } = require("electron");
-const { basename } = require("path");
+const { basename, resolve } = require("path");
 
 const fixPath = require("fix-path");
 const Store = require("electron-store");
 const { spawn } = require("child_process");
+
+fixPath();
 
 const schema = {
   projects: {
@@ -22,11 +24,11 @@ function render(tray = mainTray){
 
   const items = projects.map(({ name, path }) => ({
     label: name,
-    icon: './assets/vscode16px.png',
+    icon: resolve(__dirname,'assets', 'codigoGoogle16px.png'),
     submenu: [
       {
         label: "Abrir",
-        icon: './assets/vscode16px.png',
+        icon: resolve(__dirname,'assets', 'vscode16px.png'),
         click: () => {
           spawn('code', [path], { shell: true });
         },
@@ -34,7 +36,7 @@ function render(tray = mainTray){
 
       {
         label: "Remover",
-        icon: './assets/excluirPasta16px.png',
+        icon: resolve(__dirname,'assets', 'excluirPasta16px.png'),
         click: () => {
           store.set(
             'projects',
@@ -49,7 +51,7 @@ function render(tray = mainTray){
   const contextMenu = Menu.buildFromTemplate([
     {
       label: "Adicionar projeto",
-      icon: "./assets/novaPasta16px.png",
+      icon: resolve(__dirname,'assets', 'novaPasta16px.png'),
       click: async () => {
         try {
             const result = await dialog.showOpenDialog({properties: ['openDirectory']}) 
@@ -90,7 +92,7 @@ function render(tray = mainTray){
       type: "normal",
       label: "Sair",
       role: "quit",
-      icon: './assets/fecharJanela16px.png',
+      icon: resolve(__dirname,'assets', 'fecharJanela16px.png'),
       enabled: true,
     }
   
@@ -101,6 +103,6 @@ function render(tray = mainTray){
 }
 
 app.on("ready", () => {
-  mainTray = new Tray('./assets/trayIcon.png');
+  mainTray = new Tray(resolve(__dirname,'assets', 'trayIcon.png'));
   render(mainTray)
 });
